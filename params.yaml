@@ -1,3 +1,5 @@
+# Taken from Keras Library for vgg16
+
 AUGUMENTATION : True
 IMAGE_SIZE : [224,224,3]
 BATCH_SIZE : 16
