@@ -1,4 +1,4 @@
-tensorflow==2.14.1
+tensorflow==2.15
 pandas==2.1.4
 dvc==3.37.0
 notebook==7.0.6
