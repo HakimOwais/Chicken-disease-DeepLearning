@@ -36,13 +36,14 @@ def trainRoute():
 @cross_origin()
 def predictRoute():
     image = request.json['image']
+    clApp = ClientApp()
     decodeImage(image, clApp.filename)
     result = clApp.classifier.predict()
     return jsonify(result)
 
 
-if __name__ == "__main__":
-    clApp = ClientApp()
-    app.run(host='0.0.0.0', port=8080) #local host
+# if __name__ == "__main__":
+#     clApp = ClientApp()
+#     app.run(host='0.0.0.0', port=8080) #local host
     # app.run(host='0.0.0.0', port=8080) #for AWS
     # app.run(host='0.0.0.0', port=80) #for AZURE
